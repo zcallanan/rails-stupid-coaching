@@ -1,0 +1,18 @@
+<div class="ask-container">
+  <h1>Stupid Coaching</h1>
+  <p>Ask your coach anything:</p>
+  <div class="form-row justify-content-left ">
+    <div class="col-4">
+      <form action="/answer" method="get">
+        <div class="input-group">
+          <input type="text" class="form-control" name="answer" value="<%= params[:answer] %>" placeholder="What is it?">
+          <div class="input-group-append">
+            <input type="submit" class="form-control btn btn-primary" value="Ask!">
+          </div>
+        </div>
+    </div>
+  </form>
+  </div>
+</div>
+
+

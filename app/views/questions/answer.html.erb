@@ -1,0 +1,20 @@
+<div class="ask-container">
+  <h1>Stupid Coaching</h1>
+  <!-- You -->
+  <div class="card col-3 card-borders border-top-0 border-right-0 border-bottom-0 mt-3 mb-3">
+    <p><%= @answer %></p>
+    <p>-You</p>
+  </div>
+  <div class="card col-3 card-borders border-top-0 border-right-0 border-bottom-0 mb-3" id="coach">
+    <% if @answer == "I am going to work" %>
+    <p><strong>Great!</strong></p>
+    <% elsif @answer[-1] == "?" %>
+      <p><strong>Silly question, get dressed and go to work!</strong></p>
+    <% else %>
+      <p><strong>I don't care, get dressed and go to work!</strong></p>
+    <% end %>
+    <p>- Coach</p>
+  </div>
+  <%= link_to "Ask another question", ask_path %>
+</div>
+
